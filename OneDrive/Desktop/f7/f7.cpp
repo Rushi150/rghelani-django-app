@@ -10,7 +10,7 @@
 
 // Function    : createTextFile
 // Description : This function creates a "myTextFile.txt" and inserts predefined content into it.
-//               The text file will contain the lines "This is line 1" and "This is line 2".
+
 // Parameters  : None
 // Returns     : void
 void createTextFile() {
@@ -28,9 +28,9 @@ void createTextFile() {
     }
 
     // Write predefined content to the file
-    if (fprintf(myTextFile, "This is line 1.\nThis is line 2.\n") < 0) {
+    if (fprintf(myTextFile, "This line is number 1.\nThis line is number 2.\n") < 0) {
         // Print an error message if writing to the file fails
-        perror("Error writing to file");
+        perror("Error while writing to file");
     }
 
     // Close the file
